@@ -6,6 +6,7 @@ DB_PATH = './comments.db'   # Update this path accordingly
 
 def add_to_list(comment):
 
+
     try:
         conn = sqlite3.connect(DB_PATH)
 
