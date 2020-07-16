@@ -5,11 +5,7 @@ import os.path
 import requests
 from pprint import pprint
 import time
-from io import BytesIO
-from random import random
-from azure.cognitiveservices.vision.contentmoderator import ContentModeratorClient
-import azure.cognitiveservices.vision.contentmoderator.models
-from msrest.authentication import CognitiveServicesCredentials
+
 app = Flask(__name__)
 
 
