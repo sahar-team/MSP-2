@@ -13,6 +13,7 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+KEY = <Mettrevotreclefazure>
 
 @app.route('/comment/new', methods=['POST'])
 def add_comment():
