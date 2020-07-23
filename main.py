@@ -21,7 +21,7 @@ def add_comment():
     if request.method == "POST":
         req = request.form.to_dict()
         comment = req["comment"]
-        headers = {"Ocp-Apim-Subscription-Key": 'fc611a971326402a84c303e75460a5d3', 'Content-type': 'text/plain'}
+        headers = {"Ocp-Apim-Subscription-Key": KEY, 'Content-type': 'text/plain'}
         url = 'https://westeurope.api.cognitive.microsoft.com/contentmoderator/moderate/v1.0/ProcessText/Screen?classify=True&language=fra'
         data = {'ContentValue': comment}
         response = requests.post(url, headers=headers, data=data)
